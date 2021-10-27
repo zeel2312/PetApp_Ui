@@ -5,7 +5,12 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
+
       home: HomePage(),
+      routes: <String,WidgetBuilder>{
+
+        'HomeScreen' : (BuildContext context)=>HomeScreen(),
+      },
       theme: ThemeData(fontFamily: 'Circular'),
       debugShowCheckedModeBanner: false,
     ),
